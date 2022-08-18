@@ -16,7 +16,7 @@ const Sidebar = ({ isLoading }) => {
         {isLoading ? (
           <Skeleton type="menu" />
         ) : (
-          <>
+          <div>
             <div className="sidebarItem active">
               <Home />
               <span>Home</span>
@@ -33,7 +33,7 @@ const Sidebar = ({ isLoading }) => {
               <VideoLibrary />
               <span>Library</span>
             </div>
-          </>
+          </div>
         )}
       </div>
     </div>
